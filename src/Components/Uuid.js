@@ -1,5 +1,3 @@
-import React from "react";
-
 const Uuid = () => {
  return "xxxxxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxx".replace(/[xy]/g, (c) => {
   const r = (Math.random() * 16) | 0,

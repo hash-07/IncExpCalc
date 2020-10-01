@@ -22,7 +22,7 @@ const AddTransaction = () => {
  const onSubmitIncome = (e) => {
   e.preventDefault();
 
-  if (incomeText !== "") {
+  if (incomeText !== "" && incomeAmount > 0) {
    const newIncomeTransaction = {
     id: Uuid(),
     incomeText,
@@ -48,7 +48,7 @@ const AddTransaction = () => {
  const onSubmitExpense = (e) => {
   e.preventDefault();
 
-  if (expenseText !== "") {
+  if (expenseText !== "" && expenseAmount > 0) {
    const newExpenseTransaction = {
     id: Uuid(),
     expenseText,
